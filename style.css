@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Readex+Pro:wght@500&family=Righteous&family=Sarala:wght@400;700&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: hsl(219, 21%, 13%);
+    overflow-y: hidden;
+    width: 100vh;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:20px;
+    left: 100px;
+    
+}
+header h1{
+    color: #897FF7;
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+header img{
+    height: 37px;
+    width: 37px;
+   
+
+}
+.imag{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 65px;
+    gap: 50px;
+   
+}
+
+
+header h3{
+    position: relative;
+    top: 30px;
+    left: 155px;
+    color: #606369;
+    font-family: 'Readex Pro', sans-serif;
+   
+    
+    height: 0;
+   
+}
+
+.line{
+    border: 0.4px solid  #606369;
+    position: relative;
+    top: 44px;
+    left: 45px;
+    width: 100px;
+}
+.line2{
+    border: 0.4px solid #606369;
+    position: relative;
+    top: 43px;
+    left: 193px;
+    width: 100px;
+   
+}
+main{
+    display: flex;
+    position: relative;
+    left: 126px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+    font-family: 'Readex Pro', sans-serif; 
+    color: white;
+    gap: 20px;
+    
+}
+form label{
+    font-size: 18px;
+   position: relative;
+   top: 10px;
+}
+    form input{
+    border: #040B18 0.6px solid;
+    background: #161923;
+    color: white;
+    height: 45px;
+    width: 300px;
+    border-radius: 5px;
+     justify-content: center;
+   align-items: center;
+    }
+    form input:focus{
+        outline:none;
+    }
+    
+    
+.svg{
+  
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 360px;
+    
+    bottom: 0px;
+    height: 430px;
+    
+}
+.burrom{
+    position: relative;
+}
+
+ main button{
+   height: 47px;
+   display: flex;
+   position: absolute;
+   width: 122px;
+   top: 400px;
+   justify-content: center;
+   align-items: center;
+   right: 592px;
+   background: #6C61F6;
+   color: white;
+   font-family: 'Readex Pro', sans-serif; 
+   border-radius: 30px;
+   cursor: pointer;
+}
+main button:hover{
+ animation: cores 2s linear;
+}
+.bola{
+    height: 550px;
+    width: 550px;
+    
+    overflow-x: none;
+    border-radius: 50%;
+    background: #9F98B0;
+    position: absolute;
+    left: 790px;
+    top: -25px;
+    box-shadow: 0px 0px 03px 0px  #161923;
+    z-index: -1;
+    
+}
+
+@keyframes cores{
+
+    0%{filter: hue-rotate(0deg); color: black;}
+  100%{
+      filter:  hue-rotate(360deg);color: black;;
+  }
+}
+@media only screen and (max-width: 800px){
+    body{
+        height: 100vh;
+    }
+    }
+}
